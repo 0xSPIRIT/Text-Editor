@@ -67,7 +67,7 @@ int main(int argc, char** argv) {
 	White.g = 255;
 	White.b = 255;
 	
-	cour  = TTF_OpenFont("kongtext.ttf", 12);
+	cour  = TTF_OpenFont("../res/kongtext.ttf", 12);
 
 	lines = (Text**) malloc(sizeof(Text*) * 50);
 	lines[currentLine++] = CreateText(renderer, cour, editors[0]->buffer, White, pixelsPerChar, currentLine - 1);
